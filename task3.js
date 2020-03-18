@@ -1,3 +1,11 @@
+console.log(`
+########################################################################################################################
+
+TASK 3
+
+########################################################################################################################
+`);
+
 const DEFAULT_BOTTLES = 50;
 
 function showMessage(bottlesLeft) {
@@ -5,8 +13,8 @@ function showMessage(bottlesLeft) {
         return
     }
 
-    if (bottlesLeft == 0) {
-        console.log('жодної!')
+    if (bottlesLeft === 0) {
+        console.log('жодної!');
         return
     }
 
