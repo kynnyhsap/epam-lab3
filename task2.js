@@ -12,23 +12,23 @@ function printRow(row, padding) {
 
 function drawPascalTriangle(n) {
     if (n < 1) {
-        return;
+        return
     }
 
     let prev = [1];
     printRow(prev, n)
 
     if (n === 1) {
-        return;
+        return
     }
 
     for (let i = 2; i <= n; i++) {
-        const current = Array(i).fill(0);
+        const current = Array(i).fill(0)
 
         for (let j = 0; j < i; j++) {
             if (j === 0 || j === i - 1) {
-                current[j] = 1;
-                continue;
+                current[j] = 1
+                continue
             }
 
             current[j] = prev[j - 1] + prev[j]

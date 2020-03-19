@@ -4,9 +4,9 @@ console.log(`
 TASK 3
 
 ########################################################################################################################
-`);
+`)
 
-const DEFAULT_BOTTLES = 50;
+const DEFAULT_BOTTLES = 50
 
 function showMessage(bottlesLeft) {
     if (bottlesLeft < 0) {
@@ -14,16 +14,15 @@ function showMessage(bottlesLeft) {
     }
 
     if (bottlesLeft === 0) {
-        console.log('жодної!');
+        console.log('жодної!')
         return
     }
 
     console.log(`${bottlesLeft} стоїть на стіні, одна упала і залишилось`)
+
+    showMessage(bottlesLeft - 1)
 }
 
 
-
-for (let i = DEFAULT_BOTTLES; i >= 0; i--) {
-    showMessage(i)
-}
+showMessage(50)
 
